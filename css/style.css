@@ -1,0 +1,309 @@
+html,
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background-color: #B57737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header form {
+    position: absolute;
+    right: 20px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 35px;
+    color: #E8EDE2;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: #E89847;
+    flex: 1;
+}
+
+.new-list {
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.new-list form input {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+.new-list form input:focus {
+    outline: none;
+}
+
+.all-lists {
+    display: flex;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.list {
+    margin: 10px;
+    background-color: #E2E4E6;
+    border-radius: 3px;
+    width: 300px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.list h2 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    min-height: 10px;
+}
+
+ul h2 {
+    align-self: center;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    padding-bottom: 8px;
+    max-width: 300px;
+    margin: 5px 10px;
+    border-radius: 3px;
+    background-color: white;
+    border-bottom: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.item:hover {
+    background-color: #C6C8C9;
+}
+
+.item li {
+    font-size: 20px;
+}
+
+.btn {
+    margin: 0 1px;
+    background-color: inherit;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 5px;
+    font-family: 'Slabo 27px';
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.exit-btn {
+    border: none;
+    background-color: inherit;
+    font-size: 25px;
+    color: #919394;
+}
+
+.exit-btn:hover {
+    color: #7D7E7F;
+    cursor: pointer;
+}
+
+.edit-btn {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.edit-btn:hover {
+    background-color: #B4B6B8;
+}
+
+.edit-btn i {
+    color: #5A5B5C;
+}
+
+.editing {
+    z-index: 1;
+    min-height: 150px;
+}
+
+.editing:hover {
+    background-color: white;
+}
+
+.editing .edit-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.editing .edit-form textarea {
+    flex: 1;
+    font-size: 20px;
+    border: none;
+    resize: none;
+}
+
+.editing .edit-form textarea:focus {
+    outline: none;
+}
+
+.editing .edit-container {
+    flex: 1;
+    display: flex;
+}
+
+.save-btn {
+    font-size: 25px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    background-color: #56a23f;
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: #4C8F38;
+}
+
+.del-item-btn i,
+.del-list-btn i {
+    border: none;
+    background-color: inherit;
+    font-size: 25px;
+    color: #919394;
+}
+
+.del-item-btn i:hover,
+.del-list-btn i:hover {
+    color: #525354;
+}
+
+.del-item-btn i {
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.tools {
+    padding-top: 10px 0;
+}
+
+.add-item {
+    border: none;
+    background-color: #E2E4E6;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.add-item:hover {
+    background-color: #AAACAD;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.edit-form-btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+
+.tools form {
+    margin: 5px 10px;
+}
+
+.tools form textarea {
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    resize: none;
+    border-radius: 3px;
+    padding: 5px;
+    box-sizing: border-box;
+    min-height: 75px;
+}
+
+.tools form textarea:focus {
+    outline: none;
+}
+
+.add-form-btns {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.add-btn,
+.login-btn,
+.signup-btn,
+.list-btn {
+    font-size: 25px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    background-color: #56a23f;
+    color: white;
+}
+
+.add-btn:hover,
+.login-btn:hover,
+.signup-btn:hover,
+.list-btn:hover {
+    background-color: #4C8F38;
+}
+
+.signout-btn {
+    font-size: 25px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    background-color: #DB9043;
+    color: white;
+}
+
+.exit-add-btn,
+.exit-edit-btn {
+    border: none;
+    background-color: inherit;
+    font-size: 25px;
+    color: #919394;
+}
+
+.exit-add-btn:hover,
+.exit-edit-btn:hover {
+    color: #7D7E7F;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
